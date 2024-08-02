@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Veri Tablosu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <button id="birimButton">Birim Girişi</button>
+            <button id="firmaButton">Firma Girişi</button>
+        </div>
+        <div class="table-container">
+            <div id="birimTableContainer">
+                <table id="birimTable">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Birim Tablosu</th>
+                        </tr>
+                        <tr>
+                            <th>ID</th>
+                            <th>Birim Adı</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myBirimTable">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">
+                                <button id="birimAddButton">Birim Ekle</button>
+                                <form id="birimForm" class="entryForm" style="display:none;">
+                                    <label for="birimAd">Birim Adı:</label>
+                                    <input type="text" id="birimAd" name="birimAd" required>
+                                    <button type="submit">Ekle</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div id="firmaTableContainer" style="display:none;">
+                <table id="firmaTable">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Firma Tablosu</th>
+                        </tr>
+                        <tr>
+                            <th>ID</th>
+                            <th>Firma Adı</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myFirmaTable">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">
+                                <button id="firmaAddButton">Firma Ekle</button>
+                                <form id="firmaForm" class="entryForm" style="display:none;">
+                                    <label for="firmaAd">Firma Adı:</label>
+                                    <input type="text" id="firmaAd" name="firmaAd" required>
+                                    <button type="submit">Ekle</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
